@@ -16,6 +16,18 @@ body {
   max-width: 1920px;
   background-image: linear-gradient(140deg, #1aace0 0%, black 100%); }
 
+.btn {
+  background: white;
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: .8em; }
+
 #header {
   background-image: url("../../images/header-image.png");
   height: 100%;
@@ -23,9 +35,11 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   overflow: hidden; }
+  #header .container {
+    padding-top: 7%; }
 
 .wraper {
-  padding: 0 140px;
+  padding: 30px 7.3%;
   font-size: 1em; }
 
 .navbar {
@@ -34,9 +48,11 @@ body {
   justify-content: space-between; }
 
 #logo {
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 2.5em; }
 
 .nav-links {
   display: flex; }
   .nav-links .link {
-    list-style-type: none; }
+    list-style-type: none;
+    padding-left: 10px; }
