@@ -31,19 +31,36 @@ body {
 
 #header {
   background-image: url("../../images/header-image.png");
-  height: 100vh;
-  width: auto;
+  height: 2500px;
+  max-width: 1920px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   overflow: hidden; }
   #header .container {
-    padding-top: 7%;
-    height: 800px;
-    position: relative; }
+    height: 100vh;
+    max-height: 700px;
+    background: transparent;
+    width: 100%;
+    display: flex; }
+    #header .container .right {
+      width: 65%;
+      height: 90%;
+      padding-top: 10%; }
+    #header .container .left {
+      width: 35%;
+      height: 90%;
+      padding-top: 10%; }
+
+.ipad {
+  width: 100%;
+  height: auto;
+  background-size: contain; }
 
 .wraper {
   padding: 30px 7.3%;
-  font-size: 1em; }
+  font-size: 1em;
+  height: 100%; }
 
 .navbar {
   display: flex;
@@ -60,9 +77,9 @@ body {
     list-style-type: none;
     padding-left: 10px; }
 
-.ipad {
-  position: absolute;
-  bottom: 0;
-  right: -50px;
-  height: 900px;
-  width: auto; }
+.inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .inline h1 {
+    padding-right: 40px; }
