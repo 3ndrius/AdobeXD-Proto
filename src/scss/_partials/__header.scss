@@ -1,0 +1,32 @@
+#header{
+    background-image: url('../../images/header-image.png');
+    height:100%;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+.wraper{
+    padding: 0 140px;
+    font-size:1em;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    
+}
+#logo{
+    font-weight:$main-weight;
+}
+.nav-links{
+    display: flex;
+
+    .link{
+        list-style-type: none;
+        
+    }
+}
