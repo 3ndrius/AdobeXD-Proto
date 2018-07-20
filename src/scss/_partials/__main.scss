@@ -1,10 +1,45 @@
-
+#main{
+    padding: 0 7.3%;
+    background: transparent;
+    
+}
 .inline{
     display: flex;
     flex-direction: row;
     align-items: center;
+    color:black;
 
     h1{
         padding-right: 40px;
+        color:$g-color;
     }
+    .click-link{
+        color:$color-w;
+    }
+}
+
+
+.grid{
+    position: relative;
+    display: grid;
+    padding: 40px 0;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap:15px;
+
+    img{
+        height: auto;
+        width:100%;
+    }
+}
+
+.desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:20px 20%;
+    text-align: center;
+    color:$color-w;
 }

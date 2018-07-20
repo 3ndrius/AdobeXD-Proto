@@ -12,9 +12,9 @@ body {
 #wrap {
   margin-left: auto;
   margin-right: auto;
-  height: 4000px;
+  height: 100%;
   max-width: 1920px;
-  background-image: linear-gradient(140deg, #1aace0 0%, black 100%); }
+  background-image: white; }
 
 .btn {
   background: white;
@@ -27,18 +27,58 @@ body {
   align-items: center;
   text-transform: uppercase;
   font-size: .8em;
-  margin: 40px 0; }
+  margin: 40px 0;
+  transition: all .5s ease-in-out; }
+
+.btn2 {
+  background: #1cba98;
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: .8em;
+  margin: 40px 0;
+  transition: all .5s ease-in-out; }
+
+.btn:hover, .btn2:hover {
+  transform: scale(1.1);
+  cursor: pointer; }
+
+.active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  background: white;
+  animation-name: anim;
+  animation-duration: 1s; }
+
+@keyframes anim {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.choose {
+  z-index: 10001;
+  height: 200px;
+  width: 200px; }
 
 #header {
-  background-image: url("../../images/header-image.png");
-  height: 2500px;
+  background-image: url("../../images/deadpoolheader.png");
+  height: 1200px;
   max-width: 1920px;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden; }
+  background-size: auto;
+  background-position: top center; }
   #header .container {
-    height: 100vh;
+    height: 100%;
     max-height: 700px;
     background: transparent;
     width: 100%;
@@ -77,9 +117,46 @@ body {
     list-style-type: none;
     padding-left: 10px; }
 
+#main {
+  padding: 0 7.3%;
+  background: transparent; }
+
 .inline {
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  color: black; }
   .inline h1 {
-    padding-right: 40px; }
+    padding-right: 40px;
+    color: #1cba98; }
+  .inline .click-link {
+    color: #01B9FB; }
+
+.grid {
+  position: relative;
+  display: grid;
+  padding: 40px 0;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 15px; }
+  .grid img {
+    height: auto;
+    width: 100%; }
+
+.desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 20%;
+  text-align: center;
+  color: #01B9FB; }
+
+#footer {
+  color: black;
+  padding: 0 7.3%;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center; }

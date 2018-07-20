@@ -1,20 +1,21 @@
 #header{
-    background-image: url('../../images/header-image.png');
-    height:2500px;
+    background-image: url('../../images/deadpoolheader.png');
+    // background-image: url('../../images/header-image2.png');
+    height:1200px;
     max-width: 1920px;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
+    background-size:  auto;
+    background-position: top center;
+ 
 
     .container{
        
-        height: 100vh;
+        height:100%;
         max-height:700px;
         background: transparent;
         width: 100%;
         display:flex;
-        
+       
         
         
         .right{
