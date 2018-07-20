@@ -48,28 +48,6 @@ body {
   transform: scale(1.1);
   cursor: pointer; }
 
-.active {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 9999;
-  background: white;
-  animation-name: anim;
-  animation-duration: 1s; }
-
-@keyframes anim {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-.choose {
-  z-index: 10001;
-  height: 200px;
-  width: 200px; }
-
 #header {
   background-image: url("../../images/deadpoolheader.png");
   height: 1200px;
