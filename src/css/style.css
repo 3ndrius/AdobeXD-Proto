@@ -44,16 +44,12 @@ body {
   margin: 40px 0;
   transition: all .5s ease-in-out; }
 
-.btn:hover, .btn2:hover {
-  transform: scale(1.1);
-  cursor: pointer; }
-
 #header {
   background-image: url("../../images/deadpoolheader.png");
   height: 1200px;
   max-width: 1920px;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
   background-position: top center; }
   #header .container {
     height: 100%;
@@ -117,10 +113,22 @@ body {
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 15px; }
+  grid-gap: 20px; }
+  .grid .figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
   .grid img {
     height: auto;
-    width: 100%; }
+    width: 100%;
+    transition: all .7s ease-in-out;
+    cursor: pointer; }
+
+.figure:hover img {
+  transform: scale(0.95);
+  -webkit-box-shadow: 0px 6px 15px -2px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 0px 6px 15px -2px rgba(0, 0, 0, 0.67);
+  box-shadow: 0px 6px 15px -2px rgba(0, 0, 0, 0.67); }
 
 .desc {
   display: flex;
